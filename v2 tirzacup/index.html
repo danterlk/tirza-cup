@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liga Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <div class="logo"> TIRZA CAMP PRO MASTER</div>
+  <div class=img ></div>
+    <img src="agv logo.png" height="100">
+
+  <nav>
+    <button class="active" onclick="showSection('classificacao', this)">CLASSIFICAÇAO</button>
+    <button onclick="showSection('resultados', this)">RESULTADOS</button>
+    <button onclick="showSection('futuros', this)">PROXIMOS JOGOS</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- CLASSIFICAÇÃO -->
+  <section id="classificacao" class="section active">
+    <h1> Classificação</h1>
+
+    <div class="table-container">
+  <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Time</th>
+          <th>PJ</th>
+          <th>V</th>
+          <th>E</th>
+          <th>D</th>
+          <th>GP</th>
+          <th>GC</th>
+          <th>SG</th>
+          <th>PTS</th>
+        </tr>
+      </thead>
+      <tbody id="standingsBody"></tbody>
+     </table>
+</div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section id="resultados" class="section">
+    <h1> Resultados</h1>
+    <div id="matches"></div>
+  </section>
+
+  <section id="futuros" class="section">
+  <h1> Próximos Jogos</h1>
+  <div id="futureMatches"></div>
+</section>
+</main>
+
+<script src="script.js"></script>
+
+
+</div>
+</body>
+</html>
