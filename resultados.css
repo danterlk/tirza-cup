@@ -1,0 +1,122 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #f4f6f9; 
+    color: #333; 
+    padding: 20px; 
+    margin: 0;
+}
+
+h1 { 
+    text-align: center; 
+    color: #1e3a8a; 
+    
+}
+
+/* Container que alinha os cards lado a lado automaticamente */
+.grid-resultados {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Visual de cada Placar */
+.card-placar {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 5px solid #10b981; /* Detalhe verde lateral */
+}
+
+.confronto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.time-box {
+    flex: 1;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1f2937;
+}
+
+.time-vencedor { 
+    text-align: right; 
+    color: #10b981; /* Destaca o time vencedor em verde */
+}
+
+.time-perdedor { 
+    text-align: left; 
+    color: #4b5563; 
+}
+
+.placar-numeros {
+    background: #f3f4f6;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #111827;
+    margin: 0 15px;
+    white-space: nowrap;
+}
+
+.status-partida {
+    font-size: 12px;
+    color: #9ca3af;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.loading { 
+    text-align: center; 
+    font-size: 18px; 
+    color: #666; 
+    margin: 40px; 
+    width: 100%;
+}
+header {
+    background-color: #f4f6f9;
+}
+nav {
+    display: flex;
+	justify-content: center;
+    margin-right: 5%;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 20px;
+    
+}
+
+nav a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #f7f0f0;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    background-color: #11235e;
+    border-radius: 10px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    border: 2px solid black;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #6235bc;
+    transform: scale(1.10);
+}
